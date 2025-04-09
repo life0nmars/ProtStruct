@@ -1,0 +1,139 @@
+    
+body {
+        font-family: "Gowun Dodum", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-image: url('../static/images/back1.png'); /* Путь к изображению */
+        background-size: cover; /* Масштабирование изображения */
+        background-attachment: fixed; 
+        background-repeat: no-repeat; /* Отключение повторения изображения */
+        background-position: center; 
+        line-height: 30px;
+    }
+    .font-change{
+        font-family: "League Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .body-cont{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #b7c6cd;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 1000px;
+        margin: 20px auto;
+    }
+    .center-cont{
+        text-align: center;
+    }
+     .container {
+            text-align: left; /* Убедитесь, что текст выровнен по левому краю */
+            padding: 20px
+        }
+    ul {
+            list-style-type: none; /* Убираем маркеры списка, если нужно */
+            padding: 0; /* Убираем отступы */
+        }
+
+    li {
+            text-align: left; /* Выравнивание текста внутри элементов списка */
+        }
+
+        li::before {
+            content: "✨"; /* Добавляем маркеры, если они были убраны */
+            margin-right: 8px; /* Отступ между маркером и текстом */
+            margin-bottom: 50px;
+        }
+    .container-a {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #fcf2f0;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+    }
+.container-u {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #fcf2f0;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+    }
+.container-t {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #fcf2f0;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+    }
+
+    h1 {
+        align-items: center;
+        color: #000000;
+    }
+    h2 {
+        color: #000000;
+        margin-bottom: 20px;
+    }
+    .home-button {
+        position: fixed;  /* Фиксированное положение */
+        top: 5%;  /* По центру по вертикали */
+        left: 320px;  /* Смещение от правого края */
+        transform: translateY(-20%);  /* Центрирование по вертикали */
+        border: 1px solid #5e5e5e;
+        border-radius: 5px;
+        padding: 10px 20px;
+        color: #000000;
+        background-color: #bab1e5;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .home-button:hover {
+        border: 1px solid #5e5e5e;
+        border-radius: 5px;
+        background-color: #bedded;
+    }
+        }
+    .container-a img {
+        margin-top: 20px;
+        width: 60%;
+        height: 60%;
+        object-fit: cover;  /* Изображение будет обрезано, чтобы заполнить контейнер */
+    }
+.container-u img {
+        margin-top: 20px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;  /* Изображение будет обрезано, чтобы заполнить контейнер */
+    }
+.container-t img {
+        margin-top: 20px;
+        width: 60%;
+        height: 60%;
+        object-fit: cover;  /* Изображение будет обрезано, чтобы заполнить контейнер */
+    }
+    
+    </style>

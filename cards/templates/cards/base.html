@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Protein Structure Flashcards</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container-title">
+            <h1>.˳·˖✶𓆩𓁺𓆪✶˖·˳.</h1>
+            <h1>｡˚⭒°ProtStruct°⭒˚｡</h1>
+        </div>
+    </header>
+    <div class = "font-change">
+        <div class="h2-mod">
+            Let's improve your skills!
+        </div>
+    </div>
+    <div class="body-cont">
+        <div class = "content">
+            <h2>Please, choose an option:</h2>
+            <div class="button-container">
+                <button class="option-button" onclick="window.location.href='{% url 'check_structure' %}'">Amino Acid Trainer</button>      
+                <button class="option-button" onclick="window.location.href='{% url 'check_sequence' %}'">DNA to Protein</button>
+                <button class="option-button" onclick="window.location.href='{% url 'check_nucleobase' %}'">Nucleotide Game</button>
+                <button class="option-button" onclick="window.location.href='{% url 'info_nucleobase' %}'">Info</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

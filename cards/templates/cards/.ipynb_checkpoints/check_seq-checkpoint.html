@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Structure</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'quis.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>And here is... 🪄</h1>
+    <button class="home-button" onclick="window.location.href='{% url 'home' %}'">Home 🏡</button>
+    <div class="container">
+        <h1>Your Random Sequence! </h1>
+        <h1>DNA matrix</h1>
+         ₊˚⊹♡  {{ random_seq.question }}  ♡⊹˚₊
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">✨Submit</button>
+        </form>
+        {% if result %}
+            <div class="result">{{ result }}</div>
+        {% endif %}
+        {% if result == "Correct!" %}
+            <form method="post" class="generate-button">
+                {% csrf_token %}
+                <button type="submit" name="generate_new" value="true">✨Generate New Sequence</button>
+            </form>
+        {% endif %}
+    </div>
+    <p>Debug: random_seq = {{ random_seq }}</p>
+</body>
+</html>

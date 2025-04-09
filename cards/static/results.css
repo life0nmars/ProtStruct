@@ -1,0 +1,83 @@
+    
+body {
+        font-family: "Gowun Dodum", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-image: url('../static/images/back2.png'); /* Путь к изображению */
+        background-size: cover; /* Масштабирование изображения */
+        background-attachment: fixed; 
+        background-repeat: no-repeat; /* Отключение повторения изображения */
+        background-position: center; 
+        line-height: 30px;
+    }
+h1 {
+    font-color:#f4f4f9
+    position: relative;
+    margin: 0 auto 20px;
+    padding: 10px 40px;
+    text-align: center;
+    background-color: #816a5c;
+}
+
+h1::before, h1::after {
+  content: '';
+  width: 80px;
+  height: 100%;
+  background-color: #775947;
+
+  /* position ribbon ends behind and slightly lower */
+  position: absolute;
+  z-index: -1;
+  top: 20px;
+  
+  /* clip ribbon end shape */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 25% 50%);
+
+  /* draw and position the folded ribbon bit */
+  background-image: linear-gradient(45deg, transparent 50%, #644a39 50%);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+h1::before {
+  left: -60px;
+}
+
+h1::after {
+  right: -60px;
+  transform: scaleX(-1); /* flip horizontally */
+}
+    h2 {
+        color: #000000;
+        margin-bottom: 20px;
+    }
+  h3 {
+        color: #000000;
+        margin-bottom: 20px;
+    }
+    
+   .option-button {
+        padding: 10px 20px;
+        color: #000000;
+        background-color: #d1e5e1;
+        border: 1px solid #5e5e5e;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        font-family: "Gowun Dodum", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .option-button:hover {
+        background-color: #bedded;
+        border: 1px solid #5e5e5e;
+        border-radius: 5px;
+    }
+    
+    </style>

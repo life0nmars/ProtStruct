@@ -1,0 +1,19 @@
+{% extends "cards/base.html" %}
+{% block content %}
+    <h2>All Structures</h2>
+    {% for card in card_list %}
+        <h3>{{ card.protein.pdb }} Structure</h3>
+        <article>
+            {% if random_structure %}
+                <h3>{{ random_structure.protein }} Structure</h3>
+                <img src="{{ random_structure.protein.image.url }}" alt="{{ random_structure.protein }} Image" style="display: block; margin: 0 auto; width: 300px; height: auto;"">
+                <p>{{ random_structure.res1 }}</p>
+            {% else %}
+                <p>No structures available.</p>
+            {% endif %}
+        </article>
+    {% endfor %}
+{% endblock content %}
+
+
+

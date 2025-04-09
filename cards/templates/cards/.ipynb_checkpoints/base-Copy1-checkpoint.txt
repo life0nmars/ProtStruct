@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Protein Structure Flashcards</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'nucl.css' %}">
+</head>
+<body>
+    <header>
+        <h1>  ˙✧˖°🎓 ༘⋆｡ ˚</h1>
+        <h1>ProtStruct</h1>
+        <h2>Additional Information</h2>
+        ‧°𖦹｡ If you are struggling with nucleotides recognition, this page might be usefull ｡𖦹°‧
+Firstly, we are remind you the composition of a nucleotide.
+It contains three parts:
+        <ul>
+            <li> Nucleobase <\li>
+            This part determins your nucleotide, it can be purine or pyrimidine. Interestingly, purin means <i> pure urine <\i>, because it was exctracted from urine,
+            pyrimidin name comes from its exctraction method, namely, during synthesis, performed in high temperatures ('pyr' - fire). 
+            <li> Five carbon sugar molecule <\li>
+            Desoxyrebose stands for DNA and Ribose - for RNA. Together nucleobase with sugar forms <strong> nucleoside <\strong> (from glycoside bond)
+            <li> Phosphate group <\li>
+            This phosphate group is bonded to 5' atom of the sugar and here can be mono-, di- and triphosphates. Nomenclature names, therefore, would be nucleosid <b>mono/di/tri<\b>phosphate
+        <\ul>
+    
+        <h1> Basic Nucleobases: pyrimidines <\h1>
+        <div class="container-t">
+            <h2> Thymine - T </h2>
+            Thymine was exctracted from thymus
+        <\div>
+        <div class="container-u">
+            <h2> Urcil - U </h2>
+            Uracil was exctracted from urine
+        <\div>
+        <h1> Basic Nucleobases: pyrimidines <\h1>
+        <div class="container-a">
+            <h2> Adenine - A </h2>
+            <img src="{{ context.A.url }}" alt="Nucleotide Image for A">
+            Adenine was firstly extracted from bovine pancreatic gland (adḗn, “gland”) 
+        <\div>
+    </header>
+</body>
+</html>
+
+

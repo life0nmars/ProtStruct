@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Structure</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'quis_nucl.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>And here is... 🪄</h1>
+    <button class="home-button" onclick="window.location.href='{% url 'home' %}'">Home 🏡</button>
+    <div class="container">
+        <h1>₊˚⊹♡ The nucleotide! ♡⊹˚₊</h1>
+            {% if random_nucl %}
+            <div class="img">
+                <img src="{{ random_nucl.question.url }}" alt="Nucl Image">
+            </div>
+            {% endif %}
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="Abbreviation of the nucleotide">Abbreviation of the nucleotide:</label>
+                <input type="text" id="answer1" name="answer1" required>
+            </div>
+            <div class="form-group">
+                <label for="Full name">Full name:</label>
+                <input type="text" id="answer2" name="answer2" required>
+            </div>
+            <button type="submit" id="submit">✨Submit</button>
+        </form>
+        {% if result %}
+            <div class="result">{{ result }}</div>
+            <form method="post" class="generate-button">
+                {% csrf_token %}
+                <button type="submit" name="generate_new" value="true">✨Generate New</button>
+            </form>
+        {% endif %}
+    </div>
+    <div class = "score-cont">
+        <div class="change-font">
+            <h2>Your Score: {{score}}/4</h2>
+        </div>
+    </div>
+<p> {{c}} </p>
+<p> {{score}} </p>
+<script>
+const btn = document.getElementById('submit');
+
+    btn.addEventListener('click', () => {
+      btn.style.display = 'none';
+    });
+</script>
+</body>
+</html>

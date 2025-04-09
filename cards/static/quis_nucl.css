@@ -1,0 +1,131 @@
+    
+body {
+        font-family: "Gowun Dodum", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        background-image: url('../static/images/back2.png'); /* Путь к изображению */
+        background-size: cover; /* Масштабирование изображения */
+        background-attachment: fixed; 
+        background-repeat: no-repeat; /* Отключение повторения изображения */
+        background-position: center; 
+        line-height: 30px;
+    }
+    .container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #cdb7c6;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 600px;
+    }
+ .container-title{
+        width: 680px; /* Ширина контейнера */
+        height: 210px;
+        background-image: url('../static/images/title_main.png'); /* Путь к PNG-изображению */
+        background-size: cover; /* Масштабирование фона */
+        background-repeat: no-repeat; /* Отключение повторения фона */
+        margin: 0px auto;
+        text-align: center;
+        padding: 55px 10px 10px;/* Внутренние отступы */
+        margin-top: -80px;
+    }
+.font-change{
+        font-family: "League Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+    h1 {
+        align-items: center;
+        color: #000000;
+    }
+    h2 {
+        color: #000000;
+        margin-bottom: 20px;
+    }
+    .home-button {
+        position: fixed;  /* Фиксированное положение */
+        top: 5%;  /* По центру по вертикали */
+        left: 320px;  /* Смещение от правого края */
+        transform: translateY(-20%);  /* Центрирование по вертикали */
+        border: 1px solid #5e5e5e;
+        border-radius: 5px;
+        padding: 10px 20px;
+        color: #000000;
+        background-color: #bab1e5;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .home-button:hover {
+        border: 1px solid #5e5e5e;
+        border-radius: 5px;
+        background-color: #bedded;
+    }
+    .form-group {
+            width: 100%;
+            margin-bottom: 10px; /* Уменьшение разрыва между полями */
+        }
+    .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+    .form-group input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #5e5e5e;
+            border-radius: 4px;
+        }
+        button {
+            border: 1px solid #5e5e5e;
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: #000000;
+            background-color: #d1e5e1;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            border: 1px solid #5e5e5e;
+            border-radius: 5px;
+            background-color: #bedded;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #555;
+        }
+        .generate-button {
+            border: 3px solid #134f5c;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        a.styled-link {
+            color: #cc0df5;  /* Цвет текста */
+            text-decoration: none;  /* Убираем подчеркивание */
+            font-weight: bold;  /* Жирный шрифт */
+            transition: color 0.3s ease;  /* Плавный переход цвета */
+        }
+
+        a.styled-link:hover {
+            color: #dabbed;  /* Цвет при наведении */
+        }
+    .container img {
+        margin-top: 20px;
+        width: 60%;
+        height: 60%;
+        object-fit: cover;  /* Изображение будет обрезано, чтобы заполнить контейнер */
+    }
+    
+    </style>
