@@ -17,7 +17,7 @@
 - Django 3.0 или выше
 - База данных (например, SQLite, PostgreSQL)
 
-### Установка зависимостей
+### Установка, этапы
 
 1. Клонируйте репозиторий (подробнее об этом читайте в https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
@@ -27,25 +27,19 @@
     python -m venv venv
     source venv/bin/activate  # Для Windows: venv\Scripts\activate
     ```
-
-3. Установите зависимости:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4. Выполните миграции базы данных:
+    
+3. Выполните миграции базы данных:
 
     ```bash
     python manage.py migrate
     ```
 
-5. Запустите сервер разработки:
+4. Запустите сервер разработки:
 
     ```bash
     python manage.py runserver
     ```
-6. Добавление в базу данных через само веб-приложение не подразумевается.
+P.S. Добавление в базу данных через само веб-приложение не подразумевается.
    
 ## Использование
 
