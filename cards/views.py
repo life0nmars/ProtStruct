@@ -114,13 +114,15 @@ class CheckSequenceView(View):
         """
         if s == ans:
             res = 'Correct!'
-        else:
-            for i in enumerate(ans):
-                if i < len(s) and s[i] != ans[i]:
-                    res = f"Mistake in position {i + 1}."
-                elif i == len(s):
-                    res = "Your sequence is too short. Try again"
+        elif len(s) < len(ans):
+            res = "Your sequence is too short. Try again"
+        elif len(s) > len(ans):
             res = "Too many symbols"
+        else:
+            for i, ele in enumerate(ans):
+                if s[i] != ele:
+                    res = f"Mistake in position {i + 1}."
+                    break
         return res
 
     def post(self, request):
@@ -189,11 +191,10 @@ class CheckNucleotideView(View):
         else:
             random_nucl = None
             request.session['random_nucl_id'] = None
-
-        context = {
-            'random_nucl': random_nucl,
-            'form': NucleotideForm(),
-        }
+            context = {
+                'random_nucl': random_nucl,
+                'form': NucleotideForm(),
+            }
         return render(request, html, context)
 
     def check_mistake(self, request, lst1, lst2):

@@ -33,7 +33,7 @@
                 <label for="Full name">Full name:</label>
                 <input type="text" id="answer2" name="answer2" required>
             </div>
-            <button type="submit" id="submit">✨Submit</button>
+            <button type="submit">✨Submit</button>
         </form>
         {% if result %}
             <div class="result">{{ result }}</div>
@@ -48,14 +48,6 @@
             <h2>Your Score: {{score}}/4</h2>
         </div>
     </div>
-<p> {{c}} </p>
-<p> {{score}} </p>
-<script>
-const btn = document.getElementById('submit');
 
-    btn.addEventListener('click', () => {
-      btn.style.display = 'none';
-    });
-</script>
 </body>
 </html>
