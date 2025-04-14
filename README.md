@@ -19,12 +19,7 @@
 
 ### Установка зависимостей
 
-1. Клонируйте репозиторий:
-
-    ```bash
-    git clone https://github.com/yourusername/protein-project.git
-    cd protein-project
-    ```
+1. Клонируйте репозиторий (подробнее об этом читайте в https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
 2. Создайте виртуальное окружение и активируйте его:
 
